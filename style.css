@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;500&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond&family=Tangerine&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Petit+Formal+Script&family=UnifrakturCook:700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rosarivo&display=swap");
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* section hero */
+.hero {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+}
+
+/* HEADING STYLES */
+.hero-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 4.4rem;
+  letter-spacing: 0.1em;
+  color: #F5D78E;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  z-index: 3;
+  position: relative;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  font-family: 'Sacramento';
+  font-size: 2.5rem;
+  color: #EFD9A7;
+  margin-bottom: 30px;
+  animation: flicker 2s infinite;
+}
+
+/* SPELL BLOCK */
+.spell-of-day {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff22;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(255, 221, 255, 0.2);
+}
+
+.spell-title {
+  font-family: 'Great vibes';
+  color: #FFD1FA;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.spell-quote {
+  font-style: italic;
+  color: #f9e0ff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* FLICKER EFFECT */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Spell of the Day */
+.spell-of-day {
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.3), rgba(236, 72, 153, 0.3));
+    border: 2px solid var(--mystic-gold);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 3rem auto;
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.spell-of-day::before {
+    content: '✨';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.spell-of-day::after {
+    content: '🌙';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 2rem;
+    animation: float 3s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.spell-title {
+    font-family: 'great vibes';
+    font-size: 1.5rem;
+    color: var(--mystic-gold);
+    margin-bottom: 1rem;
+}
+
+.spell-quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--ethereal-white);
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: rgba(107, 70, 193, 0.3);
+    border: 1px solid var(--mystic-gold);
+    color: var(--ethereal-white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Marcellus';
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--mystic-gold);
+    color: var(--midnight-black);
+}
+
+/* Main Content Layout */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Blog Post Cards */
+.blog-post {
+    background: rgba(45, 27, 78, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.blog-post:hover::before {
+    left: 100%;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    border-color: var(--mystic-gold);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.post-category {
+    display: inline-block;
+    background: var(--potion-green);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.post-title {
+    font-family: 'Rosarivo', serif;
+    font-size: 1.8rem;
+    color: var(--mystic-gold);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.post-excerpt {
+    color: var(--ethereal-white);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-family: 'prata';
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: rgba(248, 250, 252, 0.7);
+}
+
+.read-more {
+    color: var(--crystal-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--mystic-gold);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-widget {
+    background: rgba(45, 27, 78, 0.8);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    backdrop-filter: blur(10px);
+    position:sticky;
+}
+
+.widget-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: var(--mystic-gold);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.moon-phase {
+    text-align: center;
+    padding: 1rem;
+}
+
+.moon-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.popular-posts {
+    list-style: none;
+}
+
+.popular-posts li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.popular-posts li:last-child {
+    border-bottom: none;
+}
+
+.popular-posts a {
+    color: var(--ethereal-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.popular-posts a:hover {
+    color: var(--mystic-gold);
+}
+
+/* Newsletter Widget */
+
+.newsletter {
+    text-align: center;
+    height:300px;
+    align-content: center;
+}
+.widget-line{
+    padding-bottom: 10px;
+
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--mystic-gold);
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--ethereal-white);
+    margin-bottom: 1rem;
+}
+
+.newsletter input::placeholder {
+    color: rgba(248, 250, 252, 0.5);
+}
+
+.newsletter button {
+background: linear-gradient(45deg, #ec4899, #3b82f6); /* pink to blue */
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    font-family: 'Marcellus';
+}
+
+.newsletter button:hover {
+    transform: translateY(-2px);
+}
+
+/* Floating Witch Element 
+.floating-witch {
+    position: fixed;
+    right: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    z-index: 50;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    pointer-events: none;
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+}
+
+.floating-witch.visible {
+    right: 20px;
+    animation: float-witch 4s ease-in-out infinite;
+}
+
+.floating-witch.scroll-up {
+    transform: translateY(-50%) scaleX(-1);
+}
+
+@keyframes float-witch {
+    0%, 100% { 
+        transform: translateY(-50%) translateX(0px) rotate(0deg);
+    }
+    25% { 
+        transform: translateY(-60px) translateX(5px) rotate(1deg);
+    }
+    50% { 
+        transform: translateY(-50%) translateX(0px) rotate(0deg);
+    }
+    75% { 
+        transform: translateY(-40px) translateX(-5px) rotate(-1deg);
+    }
+}
+
+.floating-witch.scroll-up {
+    animation: float-witch-up 4s ease-in-out infinite;
+}
+
+@keyframes float-witch-up {
+    0%, 100% { 
+        transform: translateY(-50%) translateX(0px) rotate(0deg) scaleX(-1);
+    }
+    25% { 
+        transform: translateY(-60px) translateX(5px) rotate(-1deg) scaleX(-1);
+    }
+    50% { 
+        transform: translateY(-50%) translateX(0px) rotate(0deg) scaleX(-1);
+    }
+    75% { 
+        transform: translateY(-40px) translateX(-5px) rotate(1deg) scaleX(-1);
+    }
+}
+/* Witch appears with sparkle effect 
+.floating-witch::before {
+    content: '✨';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    font-size: 1.5rem;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.floating-witch::after {
+    content: '⭐';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 1rem;
+    animation: sparkle 2s ease-in-out infinite reverse;
+}
+
+@keyframes sparkle {
+    0%, 100% { 
+        opacity: 0.4; 
+        transform: scale(0.8) rotate(0deg);
+    }
+    50% { 
+        opacity: 1; 
+        transform: scale(1.2) rotate(180deg);
+    }
+}
+*/
+/* Responsive Design */
+@media (max-width: 768px) {
+    .floating-witch {
+        font-size: 3rem;
+        right: -120px;
+    }
+    
+    .floating-witch.visible {
+        right: 10px;
+    }
+    
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .category-filters {
+        padding: 0 1rem;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .spell-of-day {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+    
+    .blog-post {
+        padding: 1.5rem;
+    }
+    
+    .post-title {
+        font-size: 1.5rem;
+    }
+}

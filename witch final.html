@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WitchTips</title>
+    <link rel="stylesheet" href="witch.css">
+    <link rel="stylesheet" href="common.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+     <div class="custom-cursor" id="cursor"></div>
+
+        <div class="sparkle-layer"></div>
+    
+    <nav class="navbar" style="padding-left:20px;padding-right:20px;">
+        <div class="logo">
+           <a href="wc home.html"><img src="logo1 (1).png"  class="logo-img"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="wc home.html">Home</a></li>
+            <li><a href="product1.html">Shop Spells </a></li>
+            <li><a href="sellers1.html">Sorceress </a></li>
+            <li><a href="witch final.html">WitchTips</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-bg">
+    <div class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Ancient Wisdom for Modern Witches</h1>
+        <p class="hero-subtitle">Where <b>Entrepreneurial</b> magic meets mystical <b>Empowerment</b></p>
+        
+        <div class="spell-of-day">
+          <h3 class="spell-title">Today's   Spell   of   Empowerment</h3>
+          <p class="spell-quote" id="dailySpell">"By the power of intention and action combined, may your business bloom like wildflowers in spring - naturally, abundantly, and with unstoppable force."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <hr class="section-divider">
+
+    <div class="category-filters">
+    <button class="filter-btn active" data-category="all">All Scrolls</button>
+    <button class="filter-btn" data-category="business">Business Rituals</button>
+    <button class="filter-btn" data-category="marketing">Marketing Magic</button>
+    <button class="filter-btn" data-category="inspiration">Potion Brewing</button>
+    <button class="filter-btn" data-category="community">Coven Stories</button>
+
+    </div>
+
+<section>
+
+<div class="main-container" id="mainContainer">
+    <main class="content-area">       
+            <article class="blog-post" data-category="business" data-article-id="1">
+                <img src="b1.jpg" alt="Business Rituals" class="post-image">
+            <span class="post-category">Business Rituals</span>
+            <h2 class="post-title">10 Sacred Rituals for Business Success</h2>
+            <p class="post-excerpt">
+                Transform your morning routine into powerful business spells. From intention-setting ceremonies to abundance manifestation practices, discover how ancient rituals can supercharge your entrepreneurial journey...
+            </p>
+            <div class="post-meta">
+                <a href="#" class="read-more" onclick="openArticle(1)">📜Read the Full Scroll →</a>
+            </div>
+            </article>
+
+            <article class="blog-post" data-category="inspiration" data-article-id="2">
+                 <img src="b2.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Success Potions</span>
+                <h2 class="post-title">Brewing Success: 5 Ingredients Every Business Needs</h2>
+                <p class="post-excerpt">Stir your ambition, sprinkle some strategy, and light a flame under your vision, here are the five magical ingredients every business witch needs to brew lasting success....</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(2)">🍯Reveal the Ingredients →</a>
+                </div>
+            </article>
+
+             <article class="blog-post" data-category="inspiration" data-article-id="3">
+                 <img src="b3.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Networking Coven</span>
+                <h2 class="post-title">The Art of Enchanted Networking</h2>
+                <p class="post-excerpt">True connections aren’t just made they’re conjured. Discover how to weave trust, value, and magic into every conversation and collaboration....</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(3)">🧑‍🤝‍🧑Decode the Networking Ritual →</a>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="marketing" data-article-id="4">
+                 <img src="b4.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Marketing Magic</span>
+                <h2 class="post-title">The Visibility Spell: How to Be Seen Without Burning Out</h2>
+                <p class="post-excerpt">Marketing doesn’t have to drain your magic — here’s how to show up online with intention, not exhaustion...</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(4)">🪄Reveal the Magic →</a>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="marketing" data-article-id="5">
+                 <img src="b5.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Marketing Magic</span>
+                <h2 class="post-title">The Art of Attraction: Casting a Brand Spell That Sells</h2>
+                <p class="post-excerpt">Learn how to weave your story, visuals, and voice into a brand spell that enchants your ideal customers....</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(5)">🧝Cast This Spell →</a>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="business" data-article-id="6">
+                 <img src="b6.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Business Rituals </span>
+                <h2 class="post-title">Abundance Alchemy: A Ritual to Attract Wealth with Worth</h2>
+                <p class="post-excerpt">Break the underpricing curse that haunts women entrepreneurs.Unlock the ritual that transforms self-worth into wealth—because your magic deserves to be well paid...</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(6)">💰 Cast This Spell →</a>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="community" data-article-id="7">
+                 <img src="b7.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Coven Chronicles</span>
+                <h2 class="post-title">Building Your Business Coven: The Power of Women Supporting Women</h2>
+                <p class="post-excerpt">Why every witch needs her circle. Create a supportive network of fellow entrepreneurs who celebrate your wins, support you through challenges, and help amplify your magic...</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(7)">🌗Join the Circle →</a>
+                </div>
+            </article>
+
+              <article class="blog-post" data-category="community" data-article-id="8">
+                 <img src="b8.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Coven Chronicles</span>
+                <h2 class="post-title">From Cauldron to Commerce: How Women Are Stirring Up the Handmade Revolution</h2>
+                <p class="post-excerpt">Celebrate the rise of women-led craft brands that blend tradition, magic, and entrepreneurship....</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(8)">🕯️ Join the Ritual of Rising Women →</a>
+                </div>
+            </article>
+
+              <article class="blog-post" data-category="community" data-article-id="9" >
+                 <img src="b9.jpg" alt="Business Rituals" class="post-image">
+                <span class="post-category">Coven Chronicles</span>
+                <h2 class="post-title">Crafted with Intention: The Magic Behind Every Handmade Ritual</h2>
+                <p class="post-excerpt">Dive into the stories of meaning, ritual, and care that women pour into their creations....</p>
+                <div class="post-meta">
+                    <a href="#" class="read-more" onclick="openArticle(9)">🧺 From Hands to Hearts →</a>
+                </div>
+            </article>
+        </main>
+
+    <aside class="sidebar-content">
+                <div class="newsletter">
+                    <h3 class="widget-title">Join Our Magical Circle</h3>
+                    <p class="widget-line">Get weekly spells, business potions, and empowerment magic delivered to your cauldron.</p>
+                    <input type="email" placeholder="Your magical email address">
+                    <button>Join The Coven</button>
+                </div>
+            </aside>
+
+            <!-- NEW: Article reader panel -->
+    <div class="article-reader" id="articleReader">
+                <div class="article-reader-header">
+                    <h3 class="article-reader-title">Sacred Scroll</h3>
+                    <button class="close-reader" onclick="closeArticle()">×</button>
+                </div>
+                <div class="article-reader-content" id="articleContent">
+                    <!-- Article content will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+    <hr class="section-divider"><!--line break-->
+
+    <!-- Footer -->
+    <section style="margin-top: 5em;">
+  <footer class="custom-footer">
+    <div class="footer-quote">
+      <h1 style="color:#ede88f">“There’s a little witch in every woman.”</h1>
+    </div>
+    <div class="d-flex flex-row justify-content-center ">
+      <section class="footer-sticker">
+        <img src="logo1 (1).png" alt="Witch Sticker" class="footer-image" style="margin-right: 3em;" />
+      </section>
+      <section  class="contact-info">
+        <div style="margin-top: 2em;color:azure;text-align: center;">
+          <h4>Contact Us</h4>
+          <p>Email: support@witchcrafted.com</p>
+          <p>Instagram: witchcrafted.market</p>
+          <small>© 2025 WitchCrafted | All Spells Reserved</small>
+        </div>
+      </section>
+    </div>
+  </footer>
+</section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+    // Article database - you can expand this with your full articles
+            const articles = {
+            1: {
+                category: "Business Rituals",
+                title: "10 Sacred Rituals for Business Success",
+                meta: "Published by Luna Spellweaver • 10 min read • Ancient Business Magic",
+                content: `
+                    <h3>🌟 The Power of Sacred Business Rituals</h3>
+                    <p>In the realm where commerce meets consciousness, successful entrepreneurs have long understood that business is more than mere transactions—it's an alchemical process of transformation, manifestation, and sacred exchange.</p>
+                    
+                    <h3>1. The Dawn Intention Ceremony</h3>
+                    <p>Begin each business day by lighting a golden candle and setting your intentions. As the flame dances, visualize your goals manifesting with crystal clarity. This ritual aligns your energy with your business vision, creating a powerful foundation for the day ahead.</p>
+                    
+                    <h3>2. The Abundance Circle Meditation</h3>
+                    <p>Create a sacred circle using crystals or stones around your workspace. Sit in the center and meditate on abundance flowing into your business like a river of golden light. This practice opens your energetic channels to receive prosperity.</p>
+                    
+                    <h3>3. The Client Blessing Ritual</h3>
+                    <p>Before each client interaction, take a moment to send them loving intentions. Visualize their success and happiness, knowing that their prosperity enhances your own. This creates a powerful energetic bond that transcends ordinary business relationships.</p>
+                    
+                    <h3>4. The Mercury Hour Planning Session</h3>
+                    <p>Mercury, the messenger god of commerce, offers his blessing during the first hour after sunrise on Wednesdays. Use this time for strategic planning, communication, and networking activities. The universe conspires to support your business endeavors during these sacred moments.</p>
+                    
+                    <h3>5. The Full Moon Manifestation Ritual</h3>
+                    <p>Under the full moon's luminous power, write your business goals on parchment with silver ink. Place the paper under moonlight overnight, then keep it in your workspace as a constant reminder of your intentions. The moon's energy amplifies your manifestation power exponentially.</p>
+
+                    <h3>6. The Morning Manifesto</h3>
+                    <p> Start each day with your power statement. Speak your intentions aloud: “I create freely, I serve deeply, I receive abundantly.” This sets the tone and channels confidence through every move you make.</p>
+
+                    <h3>7. Sacred CEO Hour</h3>
+                    <p>Weekly solo check-in.Every Sunday (or your power day), review your wins, lessons, and energy leaks. Light incense, sip tea, and commune with your inner CEO. Ask: “Where is my energy best spent next?”</p> 
+
+                    <h3>8. Social Spellcasting</h3>
+                    <p>Infuse magic into marketing. Don’t just “post content”—cast spells through storytelling. Use enchanting language, visual rituals, and symbols that reflect your essence. People are drawn to authentic magic.</p>
+                   
+                    <h3>9. Nightly Gratitude Circle</h3>
+                    <p> Close the day with appreciation. List three things you’re grateful for in your biz—no matter how small. Gratitude is a magnet for abundance. Bless what you have to welcome more.</p>
+
+                    <h3>10. Potion of Focus</h3>
+                    <p> Craft a drink to sharpen your mind. Whether it’s herbal tea or moon-charged coffee, stir in your intention. Whisper a focus spell: “With each sip, clarity drips. My path is lit.” Feel the shift as you sip.</p>
+                  
+                  
+                  
+                    <p>Remember, dear business witch, these rituals are not mere superstition—they are tools for focusing your intention, aligning your energy, and creating the mindset necessary for extraordinary success. When you approach your business as a sacred practice, every transaction becomes a spell for mutual prosperity and every challenge becomes an opportunity for magical transformation.</p>
+                `
+            },
+                          2: {
+                    category: "Success Potions",
+                    title: "Brewing Success: 5 Ingredients Every Business Needs",
+                    meta: "Published by Christan Magician • 7 min read • Business Alchemy",
+                    content: `
+                    <h3>🔮 The Secret Recipe to a Thriving Biz</h3>
+                    <p>Business isn’t just strategy—it’s sorcery. To brew success that sparkles with sustainability, purpose, and power, every modern enchantress needs the right mix of ingredients. Let’s stir the cauldron of commerce with these five magical essentials.</p>
+
+                    <h3>1. Clarity Crystal (Vision)</h3>
+                    <p>Without clarity, your energy scatters. Set your compass true. Define what you truly want—not just in profits, but in purpose. What’s your brand soul? Who are you meant to serve? Write it, speak it, breathe it. Your crystal-clear vision becomes your guiding spell.</p>
+
+                    <h3>2. Wick of Consistency</h3>
+                    <p>Like a candle flame that refuses to flicker, consistency keeps your presence glowing. Whether it’s content, product drops, or community care, repeat your magic until the world can’t forget you. Ritual builds reputation.</p>
+
+                    <h3>3. Elixir of Adaptability</h3>
+                    <p>No potion stays potent forever. The market shifts, platforms change, energy evolves. Adapt with grace. Embrace feedback like it’s moonlight, not criticism. Your ability to shapeshift with authenticity is your business armor.</p>
+
+                    <h3>4. Herbs of Connection</h3>
+                    <p>True power lies in your coven. Connect. Collaborate. Communicate. Whether it’s enchanted emails, soulful social media, or voice notes to a biz bestie—stir relationships into every business brew. The stronger the circle, the stronger the spell.</p>
+
+                    <h3>5. Phoenix Focus</h3>
+                    <p>Distractions are everywhere. Guard your energy like a dragon protects treasure. Create sacred space. Use a potion of focus (tea, playlist, candle—your pick). Work in intentional bursts. Let your fire burn undisturbed.</p>
+
+                    <p>Every empire starts with a spell—crafted not in haste, but with care, clarity, and a whole lot of soul. Brew your business like you’d brew a sacred tea: slow, intentional, with powerful ingredients that align with your essence.</p>
+
+                    <h3>Your Turn to Stir the Cauldron</h3>
+                    <p>Which ingredient have you been missing? What magic are you ready to double down on?</p>
+                    `
+                },
+                            3: {
+
+                category: "Networking Coven",
+                title: "The Art of Enchanted Networking",
+                meta: "Published by Mira Stoneveil • 8 min read • Mystical Networking Secrets",
+                content: `
+                    <h3>🤝 The Sacred Weave of Connection</h3>
+                    <p>In the realm of witches and wise women, relationships have always been sacred. Networking isn't about business cards or algorithms—it's about resonance. In the modern magical world, networking becomes a ritual of energy exchange, where authenticity attracts abundance and aligned souls gather to grow together.</p>
+                    
+                    <h3>1. Casting Your Connection Circle</h3>
+                    <p>Before you enter any networking space—virtual or in-person—light a white candle and set an intention. Whisper: "May I attract kindred spirits, not just contacts." This simple pre-networking ritual tunes your frequency to attract genuine, aligned connections, not just shallow engagements.</p>
+                    
+                    <h3>2. Charm of Authentic Presence</h3>
+                    <p>Bring your full, unfiltered self into every interaction. Let your values, passions, and quirks shine. In a world full of masks, your authenticity is your magnetism. Speak from your heart, not your pitch deck. People remember presence more than perfection.</p>
+                    
+                    <h3>3. Listening as Divination</h3>
+                    <p>True networking magic lies in deep listening. Don’t just wait for your turn to speak—listen as though you’re reading a soul. Ask questions that open doors: “What lights you up lately?” or “What’s your vision right now?” Curiosity is your cauldron of connection.</p>
+                    
+                    <h3>4. Offer Before You Ask</h3>
+                    <p>In the ancient art of exchange, offering came before asking. When you meet someone, give first—share a resource, a contact, or a sincere compliment. Energy given without strings often returns multiplied. Your generosity weaves trust faster than any follow-up email.</p>
+                    
+                    <h3>5. Protecting Your Energy</h3>
+                    <p>Not every circle is sacred. Pay attention to how people make you feel. If you leave an interaction drained or diminished, it wasn’t your coven. Protect your energy like a sacred herb—share it where it’s valued, not extracted.</p>
+                    
+                    <h3>6. Follow-Up as Ritual</h3>
+                    <p>Forget robotic LinkedIn messages. Instead, write follow-ups like handwritten spells—personal, specific, and heart-led. Mention something meaningful from your conversation, and offer to support their journey. Ritualizing your follow-ups builds relationships that endure.</p>
+                    
+                    <h3>7. Circle Building over Climbing</h3>
+                    <p>Networking isn’t a ladder—it’s a web. Build a circle, not a hierarchy. Surround yourself with souls at every stage of their journey. Magic multiplies when you gather in diverse, supportive spaces where everyone contributes and everyone ascends together.</p>
+                    
+                    <h3>8. Monthly Coven Check-ins</h3>
+                    <p>Create your own networking ritual by setting monthly check-ins with your sacred circle. Host digital tea sessions, spell-share forums, or virtual co-working hours. Community care sustains business growth far better than sporadic networking sprints.</p>
+
+                    <h3>9. Aligned Collabs Only</h3>
+                    <p>Before entering any collaboration, read its energy. Does it feel forced or flowing? Do your values align? Trust your gut—if something feels off, honor the signal. Every collaboration is a spell—be sure both ingredients empower the potion.</p>
+                    
+                    <h3>10. Leave Your Light</h3>
+                    <p>Even if a connection doesn’t turn into a partnership or sale, bless it. Share something that might help them anyway. Bless their path. Your light lingers longer than any pitch. Good energy always circles back.</p>
+                    
+                    <p>Networking, in the enchanted world, isn’t about being everywhere—it’s about being deeply *somewhere*. When you show up with presence, protect your energy, and connect with soul-intent, your network becomes more than a strategy—it becomes your coven.</p>
+                    
+                    <p>So the next time you walk into a room—virtual or real—remember: you are not here to collect contacts. You are here to conjure community.</p>
+                `
+                },
+                            4: 
+                {
+                category: "Marketing Magic",
+                title: "The Visibility Spell: How to Be Seen Without Burning Out",
+                meta: "Published by Lyra Starwhisper • 7 min read • Energy-Aligned Marketing",
+                content: `
+                    <h3>🪄 The Modern Witch’s Dilemma</h3>
+                    <p>In a world that demands constant visibility, many women of magic find themselves torn between shining brightly and protecting their sacred energy. But visibility doesn’t have to mean burnout. It can be a spell — intentional, luminous, and sustainable.</p>
+
+                    <h3>1. Set Your Visibility Intention</h3>
+                    <p>Before posting, planning, or promoting — pause. Light a candle. Ask yourself: “Why do I want to be seen today?” Whether it’s to share wisdom, inspire, or invite others into your circle, let that intention guide your visibility. Purpose fuels presence.</p>
+
+                    <h3>2. Choose One Channel, Master It</h3>
+                    <p>You don’t need to be everywhere. Pick the platform where your soul feels most heard — Instagram, a blog, a podcast, a newsletter — and weave your energy into it fully. Deep roots in one garden bloom louder than scattered seeds.</p>
+
+                    <h3>3. Create in Sacred Cycles</h3>
+                    <p>Align your marketing with your natural rhythms. Use your high-energy phases (new moon, ovulation, or Monday mornings — whatever your cycle is) for content creation. During your low-energy days, rest or repurpose. Marketing can mirror your seasons, not fight them.</p>
+
+                    <h3>4. Share Stories, Not Just Offers</h3>
+                    <p>Your path, your spells, your behind-the-scenes chaos — all of it holds magnetic power. People don’t just want what you sell; they want to walk with you. Share from the heart, and your audience will feel seen through your seeing.</p>
+
+                    <h3>5. Batch Your Magic</h3>
+                    <p>Reserve one day a week or month to channel content — your ‘Potion Brewing Day.’ Write multiple posts, film your videos, or prep your emails in one focused spell. This preserves energy and helps you stay consistent without daily drain.</p>
+
+                    <h3>6. Use Visibility Shields</h3>
+                    <p>Online spaces can feel energetically leaky. Before posting or going live, visualize a golden bubble around you. Speak through that filter. It’s okay to hold parts of your life sacred. Boundaries are not barriers — they’re protection spells.</p>
+
+                    <h3>7. Let Metrics Be Miracles, Not Masters</h3>
+                    <p>Likes, follows, and conversions are reflections, not definitions. Check them to learn, not to judge. Remember: your worth is not a number. When you detach from vanity metrics, your magic flows freer — and paradoxically, reaches further.</p>
+
+                    <h3>8. Rest as Strategy</h3>
+                    <p>Visibility that costs your nervous system is not worth it. Take sacred sabbaths. Delete the app. Go dark for a moon cycle if needed. When you return, you’ll shine brighter — because your light wasn’t borrowed, it was restored.</p>
+
+                    <h3>9. Collaborate, Don’t Compete</h3>
+                    <p>Visibility grows when shared. Join circles, cross-promote with aligned witches, or be a guest on someone else’s platform. Community light expands farther than solo sparks. Honor others’ voices as you rise — it’s the coven way.</p>
+
+                    <h3>10. Trust the Slow Burn</h3>
+                    <p>Virality is a flash; legacy is a flame. Let your visibility grow like an ember — steady, warm, unforgettable. Keep showing up, one soulful post at a time. The ones meant for you will always find you.</p>
+
+                    <p>You don’t have to exhaust your essence to be seen. Marketing can feel like a ritual — intentional, sacred, and aligned with your magic. Breathe, center, cast your message, and let the universe echo it back.</p>
+
+                    <p>Because your light isn’t just for others to see — it’s for you to remember you’ve always been radiant.</p>
+                `
+                        },
+                                    5: {
+
+                category: "Marketing Magic",
+                title: "The Art of Attraction: Casting a Brand Spell That Sells",
+                meta: "Published by Elira Wynd • 6 min read • Branding Alchemy for Soulpreneurs",
+                content: `
+                    <h3>🧝 The Power of Magnetic Branding</h3>
+                    <p>A brand isn’t just colors and logos — it’s the energetic imprint you leave on every soul who crosses your path. It’s the story whispered in the winds, the frequency felt before a word is spoken. If you want to enchant your ideal clients, you need more than strategy — you need a brand spell.</p>
+
+                    <h3>1. Define Your Brand Essence</h3>
+                    <p>Before the visuals, begin with the soul of your brand. What are your core values? What transformation do you promise? Who are you when you're fully expressed? Write these down as if crafting a character in a grimoire. This is the energy your audience will fall in love with.</p>
+
+                    <h3>2. Channel Your Origin Story</h3>
+                    <p>Every powerful brand has a myth — a journey that brought the founder from ordinary to extraordinary. Tell yours. Not the polished version, but the true one — with wounds, awakenings, and wonder. People buy from hearts, not headlines.</p>
+
+                    <h3>3. Choose a Visual Sigil</h3>
+                    <p>Your colors, symbols, and fonts aren’t just aesthetic — they’re spells. They trigger emotion and memory. Choose a palette that reflects your energy (e.g., earthy, cosmic, vibrant), a symbol that becomes your sigil, and typography that feels like your tone made visible.</p>
+
+                    <h3>4. Speak the Language of Your Coven</h3>
+                    <p>Your voice — whether it's playful, poetic, fierce, or nurturing — is how your brand breathes. Use words your audience already uses in their own spells (aka their journal entries, complaints, or dreams). When they read your copy, they should feel like you’ve read their soul.</p>
+
+                    <h3>5. Clarify Your Offering Portal</h3>
+                    <p>Confusion dilutes magic. Make your offers crystal clear. What is it? Who is it for? What will shift after working with you? Don’t make them decode your magic — invite them in with clarity wrapped in mystery.</p>
+
+                    <h3>6. Align Your Energy with Your Messaging</h3>
+                    <p>If your brand says “freedom” but your energy feels frantic, the spell won’t land. Before creating, align yourself. Ground. Breathe. Only then do you write, design, or show up. Authentic energy is more potent than perfect words.</p>
+
+                    <h3>7. Cast Consistency Runes</h3>
+                    <p>Repetition is a powerful enchantment. Say your message often. Use your brand visuals across every platform. Post in your voice, not trends. People need to feel your presence over time before they trust your magic.</p>
+
+                    <h3>8. Enchant with Embodiment</h3>
+                    <p>The strongest brand spells come from those who walk their talk. Embody your message offline, too. If you guide others into confidence, show up confidently. If you offer calm, let your presence exude it. The body is the wand.</p>
+
+                    <h3>9. Let Your Brand Evolve Like a Familiar</h3>
+                    <p>Your brand isn’t fixed — it’s a living familiar that grows with you. Let it molt, shapeshift, and rebirth as you evolve. The more you allow it to mirror your expansion, the deeper it will resonate with your audience.</p>
+
+                    <h3>10. Invite the Aligned, Release the Rest</h3>
+                    <p>When your brand spell is potent, it will attract and repel. Let it. You are not meant for everyone. Your energy is sacred. Call in those who are ready, willing, and enchanted by what you offer. That’s the true art of attraction.</p>
+
+                    <p>A brand built on truth, intention, and aligned magic will never feel like selling — it will feel like magnetism. And that is where the real spell begins.</p>
+                `
+                    },
+                    6:
+                {
+                    category: "Business Rituals",
+                    title: "Abundance Alchemy: A Ritual to Attract Wealth with Worth",
+                    meta: "Channeled by Elira Wynd • 7 min read • Sacred Pricing, Self-Worth, and Prosperity Spells",
+                    content: `
+                    <h3>💰 Welcome to the Abundance Altar</h3>
+                    <p>Far too many gifted women carry the weight of the underpricing curse. Despite mastery, brilliance, and heart, they shrink their rates, apologize for charging, or overgive until burnout becomes the price of their magic. But wealth isn't greedy — it's a form of energetic gratitude for your sacred service.</p>
+
+                    <p>This is your ritual to call in wealth with worth. Not from hustle. Not from guilt. But from deep energetic alignment with your value and the universe’s infinite flow.</p>
+
+                    <h3>Step 1: Burn the Scarcity Spell</h3>
+                    <p>Scarcity is often inherited — from past lifetimes, ancestral lines, or toxic systems. Write down every limiting belief you’ve absorbed about money: “It’s hard to earn,” “I’ll lose love if I’m rich,” “Spiritual people shouldn’t charge.” Burn it safely. Declare: “This is no longer mine to carry.”</p>
+
+                    <h3>Step 2: Create a Worthiness Ward</h3>
+                    <p>Stand before a mirror. Place your hand on your heart. Speak your worth aloud: “I am worthy of being well paid. My work changes lives. I am the channel through which wealth flows with purpose.” Repeat it until it vibrates in your bones. This is your energetic shield from undercharging enchantments.</p>
+
+                    <h3>Step 3: Align Your Offer with Your Power</h3>
+                    <p>Examine your current offer. Does it reflect the true depth of your magic? Is your pricing sacred or scared? Don’t price from panic — price from power. Let your rates reflect the results you deliver, the energy you invest, and the transformation you create.</p>
+
+                    <h3>Step 4: Anoint Your Payment Portal</h3>
+                    <p>Whether it’s your sales page, checkout link, or PayPal button — bless it. Infuse it with intention. Whisper over it: “May every soul who clicks this feel empowered, expansive, and excited. May wealth be exchanged in honor, not hesitation.”</p>
+
+                    <h3>Step 5: Offer Without Attachment</h3>
+                    <p>Desperation repels. Detachment attracts. When you offer your work, do it like a priestess offering a spell to the flame — sacred, surrendered, sure. You are not for everyone. You are for the aligned. Call them in, release the rest.</p>
+
+                    <h3>Step 6: Keep a Wealth Grimoire</h3>
+                    <p>Create a journal devoted to money magic. Record every sale, every “yes,” every win — no matter how small. Write affirmations like: “Money comes easily to me.” “My business overflows with abundance.” This becomes your vibrational bank account.</p>
+
+                    <h3>Step 7: Practice the Receiving Ritual</h3>
+                    <p>Receiving is an art. When a payment comes in, don’t scroll past it. Pause. Place your hand on your heart. Whisper: “Thank you. I receive this in full faith and joy.” Let your body feel safe with money. That feeling amplifies the flow.</p>
+
+                    <p>Abundance doesn’t just arrive — it is allowed, welcomed, and honored. When you embody your worth, when you align your offers with truth, and when you treat your business like a sacred temple — wealth can’t help but find its way to you.</p>
+
+                    <p>Because your magic is worthy. Your work is powerful. And you were never meant to shrink to fit into someone else’s scarcity spell.</p>
+  `
+},
+            7:
+                {
+                    category: "Coven Chronicles",
+                    title: "Building Your Business Coven: The Power of Women Supporting Women",
+                    meta: "Channeled by Elira Wynd • 6 min read • Sisterhood, Community Magic, and Sacred Networking",
+                    content: `
+                        <h3>🌗 Every Witch Needs Her Circle</h3>
+                        <p>In ancient times, covens weren’t just for casting spells — they were sanctuaries of strength, shared wisdom, and soul-deep support. Today, modern witches (a.k.a. intuitive entrepreneurs) need that sacred sisterhood more than ever. Because building a business alone? That’s the real dark magic.</p>
+
+                        <h3>Why Go Solo When You Can Go Sacred Together?</h3>
+                        <p>Behind every powerful woman is a circle of other women whispering, “You’ve got this.” When we connect, collaborate, and celebrate each other, we amplify our individual magic into something cosmic. No competition. No comparison. Just collective rise.</p>
+
+                        <h3>The Business Coven Ritual</h3>
+                        <p>Ready to call in your sacred circle? Here's how to conjure your community:</p>
+
+                        <ul>
+                        <li><strong>Cast Your Intention:</strong> Be clear on what kind of support you’re seeking — accountability? co-creation? healing? hype squad?</li>
+                        <li><strong>Create a Ritual Space:</strong> Start a Telegram group, host a New Moon Zoom, or organize a monthly witchy brunch. Consistency breeds connection.</li>
+                        <li><strong>Lead with Vulnerability:</strong> Share your wins *and* your wobbles. Authenticity calls in soul-aligned sisters.</li>
+                        <li><strong>Protect the Energy:</strong> This isn’t a place for gossip, judgment, or energetic drain. Set clear boundaries. Guard the vibe like a high priestess.</li>
+                        </ul>
+
+                        <h3>The Gifts of the Coven</h3>
+                        <p>When you surround yourself with the right witches, everything shifts. You manifest faster. You launch with less fear. You remember you're never too much — or too little. You belong.</p>
+
+                        <p>Support becomes spellwork. Celebration becomes sacred. You rise — and so does everyone in your circle.</p>
+
+                        <h3>Your Circle Is Waiting</h3>
+                        <p>Whether you find your coven online, in a co-working cave, or under the stars — know this: you don’t have to do it all alone. Your magic magnifies in the presence of other women who see you, get you, and cheer for you like it’s their own win.</p>
+
+                        <p>So light the candle. Send the DM. Start the circle.</p>
+
+                        <p>Your coven is your compass. And together, you’re unstoppable.</p>
+  `
+},
+                8:{
+                    
+                category: "Coven Chronicles",
+                title: "From Cauldron to Commerce: How Women Are Stirring Up the Handmade Revolution",
+                meta: "Stirred by Sage Willowthorn • 5 min read • Craft Magic, Sacred Business, and Soulful Commerce",
+                content: `
+                    <h3>🕯️ The Craft Awakens</h3>
+                    <p>There’s a movement brewing beneath the surface — a return to roots, to rituals, to handcrafted magic. Across kitchens and studios, sacred spaces and solopreneur sanctuaries, women are turning their passions into potions and their crafts into commerce.</p>
+
+                    <h3>Why Handmade Is Holy</h3>
+                    <p>To create with your hands is to conjure with your heart. Every soap bar, spell jar, embroidery hoop, candle, and crystal kit carries the frequency of its maker. It’s not just product — it’s soul-infused art, born from tradition, intuition, and intention.</p>
+
+                    <h3>The Rise of the Maker Witch</h3>
+                    <p>Gone are the days of hiding your gifts. Today’s craftswomen are:</p>
+
+                    <ul>
+                    <li><strong>Channeling ancestral skills</strong> into modern brands</li>
+                    <li><strong>Selling via Etsy, Instagram, Shopify</strong> — and making real coin</li>
+                    <li><strong>Prioritizing sustainability, slowness, and sacred cycles</strong> over mass production</li>
+                    <li><strong>Weaving in story, spirituality, and self-worth</strong> into every sale</li>
+                    </ul>
+
+                    <h3>From Hobby to Holy Hustle</h3>
+                    <p>This isn’t just a side gig — it’s a soul calling. Handmade business isn’t about chasing trends. It’s about reclaiming autonomy, honoring heritage, and creating impact one piece at a time.</p>
+
+                    <h3>Rituals to Nourish Your Craft Biz</h3>
+                    <ul>
+                    <li><strong>Craft with Intention:</strong> Bless your materials, set an intention before you begin, and let your energy flow into the work.</li>
+                    <li><strong>Market with Magic:</strong> Share behind-the-scenes rituals. Let people feel your process — not just the product.</li>
+                    <li><strong>Price with Power:</strong> Stop undercharging. Sacred work deserves sacred compensation.</li>
+                    </ul>
+
+                    <h3>The Sacred Economy Is Rising</h3>
+                    <p>Every handcrafted item sold is a spell cast — for abundance, for alignment, for a new world where value isn’t dictated by mass-market algorithms, but by meaning.</p>
+
+                    <p>Support a maker. Become a maker. The revolution is circular, soulful, and stirring in cauldrons everywhere.</p>
+
+                    <p>Your hands are holy. Let them build a business that blesses the world.</p>
+                `
+                },
+                9:
+                {
+                    category: "Coven Chronicles",
+                    title: "Crafted with Intention: The Magic Behind Every Handmade Ritual",
+                    meta: "Spoken by Rowena Earthglow • 4 min read • Sacred Storytelling, Ritual Business, Feminine Energy",
+                    content: `
+                    <h3>🧺 Handmade Isn’t Just a Trend — It’s a Spell</h3>
+                    <p>In a world of mass production, fast fashion, and instant everything, there’s a quiet rebellion happening — one stitch, brew, and brushstroke at a time. Women are returning to the sacred art of creation, not just to sell, but to <em>sanctify</em>.</p>
+
+                    <h3>What Does “Crafted with Intention” Truly Mean?</h3>
+                    <p>It means every candle is poured under the moon, every charm is tied with a whispered blessing, every herbal blend stirred with a prayer. Behind each product isn’t a machine — it’s a moment, a memory, a ritual.</p>
+
+                    <h3>Rituals Infused in the Creative Process</h3>
+                    <ul>
+                    <li><strong>Moon Cycles:</strong> Many creators align production with new or full moons for energetic alignment.</li>
+                    <li><strong>Ancestral Energy:</strong> Stories passed down through grandmothers’ hands now live in each weave and brew.</li>
+                    <li><strong>Spellcasting:</strong> Tools, herbs, or symbols may be blessed, charged, or enchanted before packaging.</li>
+                    </ul>
+
+                    <h3>Meet the Women Weaving Magic</h3>
+                    <p><strong>Aria, the Soap Sorceress</strong> creates bars infused with lunar oils and affirmations — her customers say the soaps “cleanse more than just the skin.”</p>
+                    <p><strong>Meena, the Stitch Priestess</strong> embroiders sigils of protection into altar cloths, sewn during sunrise meditations.</p>
+                    <p><strong>Tahlia, the Candle Whisperer</strong> melts beeswax while chanting, calling in peace, clarity, or abundance for whoever lights it.</p>
+
+                    <h3>The Real Value Behind the Handmade</h3>
+                    <p>It’s not about the material — it’s about the moment. When you hold their work, you hold hours of emotion, energy, and enchantment. It’s not mass-made. It’s soul-made.</p>
+
+                    <h3>Honor the Craft</h3>
+                    <ul>
+                    <li>Support local makers and pay them fair</li>
+                    <li>Share their stories and rituals</li>
+                    <li>Use their creations with respect and reverence</li>
+                    </ul>
+
+                    <p>The handmade movement isn’t just about aesthetics. It’s a call to slow down, tune in, and live with intention. When women craft, they don’t just make — they remember, they heal, and they spell a better world into being.</p>
+
+                    <p>So next time you light that hand-poured candle or wear a charm someone blessed — know you’re not just holding an object.</p>
+
+                    <p><strong>You’re holding someone’s magic.</strong></p>
+                `
+                }
+
+
+                };
+         function openArticle(articleId) {
+            const article = articles[articleId];
+            if (!article) return;
+
+            const articleReader = document.getElementById('articleReader');
+            const articleContent = document.getElementById('articleContent');
+            const mainContainer = document.getElementById('mainContainer');
+            
+            // Update content
+            articleContent.innerHTML = `
+                <div class="full-article-category">${article.category}</div>
+                <h1 class="full-article-title">${article.title}</h1>
+                <div class="full-article-meta">${article.meta}</div>
+                <div class="full-article-body">${article.content}</div>
+            `;
+            
+            // Show article reader
+            articleReader.classList.add('active');
+            
+            // Hide newsletter and adjust layout
+            const newsletter = document.querySelector('.sidebar-content');
+            if (newsletter) {
+                newsletter.style.display = 'none';
+            }
+            
+        // Prevent scrolling on main body but allow article scrolling
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+
+        // Make article reader full screen overlay
+        articleReader.style.position = 'fixed';
+        articleReader.style.top = '0';
+        articleReader.style.left = '0';
+        articleReader.style.width = '100%';
+        articleReader.style.height = '100vh';
+        articleReader.style.zIndex = '9999';
+                }
+
+        function closeArticle() {
+            const articleReader = document.getElementById('articleReader');
+            const mainContainer = document.getElementById('mainContainer');
+            
+        // Hide article reader
+        articleReader.classList.remove('active');
+        
+        // Show newsletter again
+        const newsletter = document.querySelector('.sidebar-content');
+        if (newsletter) {
+            newsletter.style.display = 'block';
+        }
+        
+        // Restore body scrolling
+        document.documentElement.style.overflow = 'auto';
+        document.body.style.overflow = 'auto';
+        
+        // Reset article reader styles
+        articleReader.style.position = '';
+        articleReader.style.top = '';
+        articleReader.style.left = '';
+        articleReader.style.width = '';
+        articleReader.style.height = '';
+        articleReader.style.zIndex = '';
+    }
+
+        // Close article with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeArticle();
+            }
+        });
+
+        // Prevent default link behavior
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('read-more')) {
+                e.preventDefault();
+            }
+        })
+
+        AOS.init();
+
+        // Cursor Script
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+        cursor.style.top = e.clientY + 'px';
+        cursor.style.left = e.clientX + 'px';
+        });
+        //bg effect
+       const sparkleLayer = document.querySelector('.sparkle-layer');
+
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.top = Math.random() * 100 + 'vh';
+            sparkle.style.animationDuration = (3 + Math.random() * 4) + 's';
+            sparkleLayer.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 7000);
+        }
+
+        setInterval(createSparkle, 300);
+
+    
+         // Category filtering
+        function initCategoryFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const blogPosts = document.querySelectorAll('.blog-post');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const category = btn.dataset.category;
+
+                    blogPosts.forEach(post => {
+                        if (category === 'all' || post.dataset.category === category) {
+                            post.style.display = 'block';
+                            post.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            initCategoryFilters();
+        });
+
+        // Add fade-in animation CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+   
+</body>
+</html>
+    

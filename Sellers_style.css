@@ -1,0 +1,288 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;500&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Petit+Formal+Script&family=UnifrakturCook:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+
+/*hero section*/
+.hero-sellers {
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(135deg, #2f0f2f, #5c1a47, #7e3a5c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fceeb5;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px #F5D78E, 0 0 20px #FFB7C5;
+  margin-bottom: 6em;
+}
+
+
+.hero-sellers-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 2rem;
+  gap: 100px;
+}
+
+.hero-sellers-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 5rem;
+  color: #F5D78E;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-sellers-subtitle {
+  font-family: 'Sacramento';
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #e9e6e2;
+  animation: fadeInUp 2s ease-out;
+}
+
+.scroll-button {
+  background-color: #ffdada;
+  color: #8E305E;
+  font-family: 'Marcellus', serif;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(142, 48, 94, 0.3);
+  transition: all 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #f5d78e;
+  color: #2c103d;
+  text-decoration: none;
+}
+
+.hero-sellers-content img{
+  width:  600px;
+  height: 600px;
+  border-radius: 10px;
+  border: 4px solid #f5e3b364;
+  margin-left: 100px;
+}
+
+
+/* Section Layout */
+.seller-section {
+  padding: 60px 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'great vibes', serif;
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: #FFDFAF;
+  margin-bottom: 2em;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #F5D78E, 0 0 20px #F5D78E, 0 0 30px #F5D78E;
+}
+
+
+/* Seller Grid */
+.seller-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top:10px;
+}
+
+/* Seller Cards */
+.seller-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #BFA2DB;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #F4F1ED;
+  transition: transform 0.3s ease;
+  font-family: 'Prata', serif;
+}
+
+.seller-card:hover {
+  transform: translateY(-5px);
+
+}
+
+.seller-card img {
+  width: 160px;
+  height: 160px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #F5E3B3;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.seller-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #FFDFAF;
+  font-family: 'prata', cursive;
+}
+
+.seller-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.seller-button-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* explore more */
+.explore-more-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #FFD1FA;
+  color: #8E305E;
+  font-family: 'Marcellus', serif;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(255, 209, 250, 0.5), 0 0 15px rgba(245, 215, 142, 0.3);
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.explore-more-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffd1fa, 0 0 25px #f5d78e;
+  color: #2c103d;
+  text-decoration: none;
+}
+
+
+/* Join Form */
+.seller-form h2 {
+  font-size: 2.0rem;           /* Increase or adjust as desired */
+  color: #FFDFAF;              /* Matches your color theme */
+  font-family: 'prata', serif;
+  margin-bottom: 1rem;
+}
+
+.join-form,
+.seller-form {
+  background: linear-gradient(135deg, #2e1a3b, #4b295b); /* Mystical purple theme */
+  padding: 50px;
+  border-radius: 25px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  border: 2px solid #f5d78e;
+  box-shadow: 0 0 10px rgba(255, 209, 250, 0.9), 0 0 15px rgba(245, 215, 142, 0.25);
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.join-form input,
+.join-form textarea,
+.seller-form input,
+.seller-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #F5D78E;
+  background: rgba(255, 209, 250, 0.1);
+  color: #FFDFAF;
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  background-color: #ffdada;
+  color: #8E305E;
+  font-family: 'Marcellus', serif;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(142, 48, 94, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover{
+  background-color: #f5d78e;
+  color: #2c103d;
+  text-decoration: none;
+}
+
+
+.section-divider {
+  position: relative;
+  width: 60%;
+  margin: 7rem auto 7rem auto;
+  text-align: center;
+  border-top: 1px solid #F5D78E;
+  box-shadow: 0 -2px 15px rgba(142, 48, 94, 0.5);
+  font-family: 'Marcellus', serif;
+  font-size: 2rem;
+  color: #FFDADA;
+  text-shadow: 0 0 8px #F5D78E, 0 0 15px #A34170;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "✦";
+  color: #EFD9A7;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+
+/* Contact Info */
+.contact-info {
+  margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .seller-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .seller-card h3 {
+    font-size: 1.2em;
+  }
+}
+
+
+.custom-footer {
+  text-align: center;
+  background-color: #100128c0;
+  color: #ede88f;
+  padding: 20px 40px;
+  border-top: 1px solid #BFA2DB;
+  height: 20.2em;
+}
+
+.footer-quote {
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  margin: 20px;
+}
+
+.footer-sticker {
+  width: auto;
+  height: 13em;
+  margin-right:7em;
+}

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;500&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond&family=Tangerine&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Petit+Formal+Script&family=UnifrakturCook:700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rosarivo&display=swap");
+
+/*background*/
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #1B1325, #8E305E, #1B1325, #8E305E);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: 'Lora', serif;
+  color: #F4F1ED;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.sparkle-layer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sparkle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle, #EFD9A7, transparent);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatSparkle 6s linear infinite;
+}
+
+@keyframes floatSparkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #F5D78E, #FFB7C5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: lighten;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #F5D78E, 0 0 20px #FFB7C5;
+}
+
+/* Navigation */
+.navbar {
+  background: rgba(255, 213, 220, 0.6);/* Blood Rose with 60% opacity */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-bottom: 1px solid rgba(239, 217, 167, 0.2); /* Moonlight Gold */
+  color: #F4F1ED; /* Misty Silk text */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 10px rgb(245, 227, 179,0.6); /* Soft rose shadow */
+  transition: background 0.3s ease;
+  height:90px;
+}
+
+.logo-img{
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  font-size: 18px;
+  font-family:'Marcellus';
+}
+
+.nav-links li a:hover {
+  color: #F5D78E;
+}
+
+/*section divider*/
+.section-divider {
+  position: relative;
+  width: 60%;
+  margin: 6rem auto 7rem auto;
+  text-align: center;
+  border-top: 1px solid #F5D78E;
+  box-shadow: 0 -2px 15px rgba(142, 48, 94, 0.5);
+  font-family: 'Marcellus', serif;
+  font-size: 2rem;
+  color: #FFDADA;
+  text-shadow: 0 0 8px #F5D78E, 0 0 15px #A34170;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "✦";
+  color: #EFD9A7;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+/*footer*/
+.custom-footer {
+  text-align: center;
+  background-color: #100128c0;
+  color: #ede88f;
+  padding: 20px 40px;
+  border-top: 1px solid #BFA2DB;
+  height: auto;
+}
+
+.footer-quote {
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  margin: 20px auto;
+  color: #FFD1FA;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
+  margin-top: 2em;
+}
+
+.footer-image {
+  height: 13em;
+}
+
+.contact-info {
+  color: azure;
+  text-align: left;
+}
+
+.btn{
+  padding: 12px 24px; /* Adjusts internal spacing */
+  background: #ffdada;
+  text-align: center;
+  color: #8E305E;
+  height: auto;         /* Increased height */
+  width: auto;           /* Increased width */
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  font-family: 'Marcellus';
+  box-shadow: 0 4px 12px rgba(248, 225, 178, 0.7);
+}
